@@ -4,4 +4,15 @@ import Logo from "./Logo.jsx";
 import ReferralForm from "./ReferralForm.jsx";
 import BonusTable from "./BonusTable.jsx";
 import Navbar from "./Navbar.jsx";
-export { Button, Input, Logo, ReferralForm, BonusTable, Navbar };
+import HeroSection from "./HeroSection.jsx";
+import Benefits from "./Benefits.jsx";
+export {
+  Button,
+  Input,
+  Logo,
+  ReferralForm,
+  BonusTable,
+  Navbar,
+  HeroSection,
+  Benefits,
+};

@@ -6,6 +6,7 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm();
 
@@ -107,7 +108,12 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
             </label>
             <input
               type="email"
-              {...register("refereeEmail", { required: "Email is required" })}
+              {...register("refereeEmail", {
+                required: "Email is required",
+                validate: (value) =>
+                  value !== watch("referrerEmail") ||
+                  "Referee email must be different from Referrer email",
+              })}
               className="w-full p-1 sm:p-2 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-blue-500 outline-none transition-all"
             />
             {errors.refereeEmail && (

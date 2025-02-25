@@ -33,9 +33,8 @@ const Navbar = ({ setDisplayReferralForm }) => {
               <a
                 href="#"
                 className="relative z-10 cursor-pointer text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors"
-                onClick={() => setDisplayReferralForm(true)}
               >
-                Refer Now
+                Resources
               </a>
             </div>
           </div>

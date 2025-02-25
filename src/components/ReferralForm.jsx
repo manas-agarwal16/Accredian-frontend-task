@@ -1,4 +1,6 @@
 import { useForm } from "react-hook-form";
+import { AxiosInstance } from "../helper/axiosInstance";
+import toast from "react-hot-toast";
 
 const ReferralForm = ({ setDisplayReferralForm }) => {
   const {
@@ -7,13 +9,30 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Form Submitted:", data);
+  const onSubmit = async (data) => {
+    try {
+      setTimeout(() => {
+        setDisplayReferralForm(false);
+        toast.success(
+          "Referral submitted successfully! We've sent a confirmation email to you and the referee.",
+          {
+            duration: 2000,
+          }
+        );
+      }, 500);
+      await AxiosInstance.post("/refer-now", data);
+    } catch (error) {
+      setDisplayReferralForm(false);
+      console.error(error);
+    }
   };
 
   return (
     <div className="fixed top-1/2 mt-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] sm:w-[800px] p-4 sm:p-8 bg-gray-900 text-gray-300 rounded-lg shadow-xl z-50 animate-fade-in border border-gray-400">
-      <span className="cursor-pointer absolute top-3 text-gray-600 right-4" onClick={() => setDisplayReferralForm(false)}>
+      <span
+        className="cursor-pointer absolute top-3 text-gray-600 right-4"
+        onClick={() => setDisplayReferralForm(false)}
+      >
         &#10006;
       </span>
       <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6 text-center">
@@ -81,7 +100,10 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
           {/* Referee Email */}
           <div>
             <label className="block text-sm font-medium text-gray-400 mb-1 sm:mb-2">
-              Referee Email *
+              Referee Email *{" "}
+              <span className="text-[13px]">
+                (Should not be the same as Referrer email)
+              </span>
             </label>
             <input
               type="email"
@@ -136,6 +158,14 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
               <option value="Digital Transformation">
                 Digital Transformation
               </option>
+              <option value="Data Analyst">Data Analyst</option>
+              <option value="Data Structures and Algorithms">
+                Data Structures and Algorithms
+              </option>
+              <option value="Cyber Security">Cyber Security</option>
+              <option value="Blockchain Development">
+                Blockchain Development
+              </option>
             </select>
             {errors.courseName && (
               <p className="text-red-500 text-xs sm:text-sm mt-1">
@@ -148,7 +178,10 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
         {/* Referrer Note (Optional) */}
         <div>
           <label className="block text-sm font-medium text-gray-400 mb-1 sm:mb-2">
-            Referrer Note
+            Referrer Note{" "}
+            <span className="text-[13px]">
+              (This note will be emailed to the referee)
+            </span>
           </label>
           <textarea
             {...register("referrerNote")}

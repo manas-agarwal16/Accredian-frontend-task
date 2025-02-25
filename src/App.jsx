@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BonusTable, Button, Logo, ReferralForm } from "./components/index.js";
 import { Clock, GraduationCap } from "lucide-react";
+import { AxiosInstance } from "./helper/axiosInstance.js";
 
 function App() {
   const [displayReferralForm, setDisplayReferralForm] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      const res = await AxiosInstance.get("/");
+      console.log(res.data);
+      
+    })();
+  }, []);
 
   return (
     <>

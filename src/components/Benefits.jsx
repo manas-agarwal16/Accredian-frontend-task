@@ -33,7 +33,6 @@ const Benefits = ({ setDisplayReferralForm }) => {
                     and premium discounts
                   </p>
                 </div>
-                {/* <div className="absolute inset-0 bg-gradient-to-b from-amber-900/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" /> */}
               </div>
             </div>
 
@@ -55,7 +54,6 @@ const Benefits = ({ setDisplayReferralForm }) => {
                     , expert mentorship, and career-transforming opportunities
                   </p>
                 </div>
-                {/* <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" /> */}
               </div>
             </div>
 

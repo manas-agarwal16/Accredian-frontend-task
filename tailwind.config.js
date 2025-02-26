@@ -15,11 +15,16 @@ export default {
           // "66%": { borderColor: "goldenrod" },
           "100%": { borderColor: "black" },
         },
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       // Add custom animation utilities
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out", // Define the animation
         "moving-border": "movingBorder 8s infinite",
+        "animate-spin": "spin 0.8s linear infinite",
       },
     },
   },

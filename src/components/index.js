@@ -6,6 +6,7 @@ import BonusTable from "./BonusTable.jsx";
 import Navbar from "./Navbar.jsx";
 import HeroSection from "./HeroSection.jsx";
 import Benefits from "./Benefits.jsx";
+import Loader from "./Loader.jsx";
 export {
   Button,
   Input,
@@ -15,4 +16,5 @@ export {
   Navbar,
   HeroSection,
   Benefits,
+  Loader,
 };

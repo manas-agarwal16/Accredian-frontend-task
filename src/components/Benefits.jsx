@@ -5,7 +5,7 @@ import { Button } from "./index.js";
 const Benefits = ({ setDisplayReferralForm }) => {
   return (
     <div>
-      <h2 className="text-center mt-10 text-semibold text-white text-2xl md:text-3xl lg:text-4xl">
+      <h2 className="text-center mt-10 text-semibold text-white text-xl md:text-2xl lg:text-4xl">
         Why To <span className="text-[#28A745]">Refer</span> and Enroll In Our{" "}
         <span className="text-[#FFA500]">Courses?</span>
       </h2>

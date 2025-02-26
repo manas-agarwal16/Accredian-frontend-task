@@ -42,7 +42,7 @@ const BonusTable = () => {
   ];
   return (
     <div className="mx-1 md:mx-10 lg:mx-14 xl:mx-20 mb-10 mt-3">
-      <h2 className="text-center mb-8 text-semibold text-white text-2xl md:text-3xl lg:text-4xl">
+      <h2 className="text-center mb-8 text-semibold text-white text-xl md:text-2xl lg:text-4xl">
         <span className="text-[#28A745]">Referral</span> Benefits as per the
         <span className="text-[#FFA500]"> Courses</span>
       </h2>

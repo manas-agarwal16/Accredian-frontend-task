@@ -10,13 +10,13 @@ const HeroSection = ({ setDisplayReferralForm }) => {
       <div className="flex items-center w-full mx-auto px-4 sm:px-6 lg:px-8">
         {/* Text Content */}
         <motion.div
-          className="text-center"
+          className="text-center mx-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           {/* Letter-by-letter Animation */}
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-200 drop-shadow-xl mb-6">
+          <h1 className="text-2xl md:text-4xl font-bold text-gray-200 drop-shadow-xl mb-6">
             {text.split(" ").map((word, wordIndex) => (
               <span key={wordIndex} className="inline-block">
                 {word.split("").map((char, charIndex) => (
@@ -38,13 +38,13 @@ const HeroSection = ({ setDisplayReferralForm }) => {
             ))}
           </h1>
 
-          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Pursue your dream career by enrolling in our expert-led courses.
           </p>
           <div className="text-center mt-8 md:mt-10 lg:mt-14 animate-fade-in-up">
             <Button
               type="button"
-              className="relative z-10 bg-[#E91E63] hover:bg-[#ff1362] text-white px-8 py-4 rounded-lg tracking-wide font-medium transition-colors cursor-pointer border-2"
+              className="relative z-10 bg-[#E91E63] hover:bg-[#ff1362] text-white px-8 py-3 md:py-4 rounded-lg tracking-wide font-medium transition-colors cursor-pointer border-2"
               onClick={() => {
                 setDisplayReferralForm(true);
               }}

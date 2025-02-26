@@ -7,6 +7,7 @@ import Navbar from "./Navbar.jsx";
 import HeroSection from "./HeroSection.jsx";
 import Benefits from "./Benefits.jsx";
 import Loader from "./Loader.jsx";
+import Footer from "./Footer.jsx";
 export {
   Button,
   Input,
@@ -17,4 +18,5 @@ export {
   HeroSection,
   Benefits,
   Loader,
+  Footer,
 };

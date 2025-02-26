@@ -73,6 +73,7 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
                   required: "Referrer Name is required",
                 })}
                 autofocus={true}
+                placeholder="Manas Agarwal"
                 className="w-full p-2 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-blue-500 outline-none transition-all"
               />
               {errors.referrerName && (
@@ -92,6 +93,7 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
                 {...register("referrerEmail", {
                   required: "Email is required",
                 })}
+                placeholder="manas.agarwal1604@gmail.com"
                 className="w-full p-2 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-blue-500 outline-none transition-all"
               />
               {errors.referrerEmail && (
@@ -110,6 +112,7 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
                 {...register("refereeName", {
                   required: "Referee Name is required",
                 })}
+                placeholder="John Doe"
                 className="w-full p-2 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-blue-500 outline-none transition-all"
               />
               {errors.refereeName && (
@@ -135,6 +138,7 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
                     value !== watch("referrerEmail") ||
                     "Referee email must be different",
                 })}
+                placeholder="example@gmail.com"
                 className="w-full p-2 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-blue-500 outline-none transition-all"
               />
               {errors.refereeEmail && (

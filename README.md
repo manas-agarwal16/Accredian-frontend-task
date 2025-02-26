@@ -48,7 +48,7 @@ npm install
 Create a **.env** file and add:
 
 ```sh
-VITE_BACKEND_URL=https://accredian-backend-task.onrender.com
+VITE_BACKEND_URL=https://accredian-backend-task-b7sp.onrender.com
 ```
 
 ### 4️⃣ Start the Development Server

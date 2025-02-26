@@ -57,7 +57,7 @@ const HeroSection = ({ setDisplayReferralForm }) => {
       <div className="animate-float relative left-3 hidden md:block">
         <img
           className="w-2/3 h-[70vh] animate-slide-in-right"
-          src="./src/assets/hero_section_image.png"
+          src="./hero_section_image.png"
           alt="image"
         />
       </div>

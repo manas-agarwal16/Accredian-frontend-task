@@ -16,10 +16,10 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
 
   const onSubmit = async (data) => {
     try {
+      setDisplayReferralForm(false);
       setLoading(true);
       const res = await AxiosInstance.post("/refer-now", data);
       setLoading(false);
-      setDisplayReferralForm(false);
       console.log("res : ", res);
       if (res?.data?.status < 400) {
         toast.success(

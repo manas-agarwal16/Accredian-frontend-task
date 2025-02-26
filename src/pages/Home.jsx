@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import {
   BonusTable,
-  Button,
   Navbar,
   ReferralForm,
   HeroSection,

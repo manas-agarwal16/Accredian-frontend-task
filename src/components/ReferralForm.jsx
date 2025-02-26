@@ -40,9 +40,9 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
   };
 
   return (
-    <> 
+    <>
       {loading && <Loader />}
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] sm:max-w-[800px] max-h-[90vh] overflow-y-auto p-4 sm:p-8 bg-gray-900 text-gray-300 rounded-lg shadow-xl z-40 animate-fade-in border border-gray-400">
+      <div className="fixed top-1/2 z-50 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] sm:max-w-[800px] max-h-[90vh] overflow-y-auto p-4 sm:p-8 bg-gray-900 text-gray-300 rounded-lg shadow-xl animate-fade-in border border-gray-400">
         {/* Close Button */}
         <span
           className="cursor-pointer absolute top-3 right-4 text-gray-500 text-lg sm:text-xl hover:text-gray-300 transition"

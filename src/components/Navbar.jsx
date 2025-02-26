@@ -5,7 +5,7 @@ import { useState } from "react";
 const Navbar = ({ setDisplayReferralForm }) => {
 
   return (
-    <nav className="w-full z-40 bg-gray-900/80 backdrop-blur border-b border-gray-800 fixed">
+    <nav className="w-full z-30 bg-gray-900/80 backdrop-blur border-b border-gray-800 fixed">
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

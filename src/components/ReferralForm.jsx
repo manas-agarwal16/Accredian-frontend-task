@@ -72,6 +72,7 @@ const ReferralForm = ({ setDisplayReferralForm }) => {
                 {...register("referrerName", {
                   required: "Referrer Name is required",
                 })}
+                autofocus={true}
                 className="w-full p-2 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-blue-500 outline-none transition-all"
               />
               {errors.referrerName && (

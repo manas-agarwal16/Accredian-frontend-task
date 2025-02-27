@@ -20,12 +20,12 @@ This is the **frontend** of the Refer Now project, built using **React.js** with
 
 ```
 /src
-🗂 /assets            # Images, icons, and static assets
-🗂 /components        # Reusable UI components
-🗂 /pages             # Main pages (Home, Refer, etc.)
-🗂 /helper             # Helper functions
-🗂 App.js             # Main component
-🗂 main.jsx           # Entry point
+🗂 /assets           
+🗂 /components      
+🗂 /pages             
+🗂 /helper            
+🗂 App.js             
+🗂 main.jsx          
 ```
 
 ## 🛆 Installation & Setup
